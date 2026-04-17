@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Um aplicativo inteligente de gestão financeira com IA, gráficos e análises personalizadas">
+    <meta name="theme-color" content="#2563EB">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="EconoMonteiro">
+    <meta name="apple-mobile-web-app-status-bar" content="black">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="referrer" content="no-referrer">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://cdn.jsdelivr.net https://www.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.tailwindcss.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://*.firebaseio.com https://*.googleapis.com https://*.netlify.app; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
+    
+    <title>ECONOMONTEIRO MAX - Seu Assistente Financeiro Inteligente</title>
+    
+    <!-- Manifest para PWA -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Favicon - Logo do App -->
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <link rel="apple-touch-icon" href="logo.svg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- App Container -->
+    <div id="app" class="min-h-screen bg-gray-50 flex flex-col"></div>
+    
+    <!-- Mobile Menu Backdrop -->
+    <div id="mobileMenuBackdrop" class="hidden fixed inset-0 bg-black/50 z-40 transition-opacity md:hidden" onclick="app.toggleMobileMenu()"></div>
+    
+    <!-- Firebase SDK (opcional - descomentar se usar Firebase) -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore.js"></script> -->
+    
+    <!-- Módulos da aplicação -->
+<script src="translations-fallback.js"></script>
+<script src="i18n.js" defer></script>
+<script src="firebase-config.js" defer></script>
+<script src="charts-module.js" defer></script>
+<script src="ai-module.js" defer></script>
+<script src="script.js" defer></script>
+    
+    <!-- Registrar Service Worker -->
+    <script>
+        // ✅ Service Worker ativado para produção
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('./service-worker.js')
+                .then(function(registration) {
+                    console.log('✅ Service Worker registrado com sucesso:', registration.scope);
+                })
+                .catch(function(error) {
+                    console.log('❌ Falha no Service Worker:', error);
+                });
+            });
+        }
+    </script>
+</body>
+</html>

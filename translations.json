@@ -1,0 +1,110 @@
+{
+  "pt-BR": {
+    "common": {
+      "appName": "ECONOMONTEIRO MAX",
+      "welcome": "Bem-vindo ao seu assistente financeiro inteligente! 👋",
+      "save": "Salvar",
+      "cancel": "Cancelar",
+      "delete": "Deletar",
+      "edit": "Editar",
+      "close": "Fechar",
+      "logout": "Sair",
+      "loading": "Carregando...",
+      "saving": "Salvando...",
+      "error": "Erro",
+      "success": "Sucesso!",
+      "warning": "Aviso",
+      "userDefaultName": "Usuário",
+      "simulate": "Simular",
+      "addCard": "Adicionar Cartão"
+    },
+    "auth": {
+      "loginTitle": "Login",
+      "registerTitle": "Criar Conta",
+      "email": "Email",
+      "name": "Nome",
+      "login": "Entrar",
+      "register": "Cadastrar"
+    },
+    "navigation": {
+      "dashboard": "📊 Dashboard",
+      "expenses": "💰 Despesas",
+      "cards": "💳 Cartões",
+      "profile": "👤 Perfil",
+      "ai": "🤖 IA",
+      "settings": "⚙️ Configs",
+      "language": "Idioma"
+    },
+    "dashboard": {
+      "title": "Resumo Mensal",
+      "monthlyBudget": "Orçamento Mensal",
+      "totalSpent": "Total Gasto",
+      "remaining": "Restante",
+      "cardsTitle": "Meus Cartões"
+    },
+    "cards": {
+      "title": "Cartões de Crédito",
+      "number": "Número * * * *",
+      "expiry": "Validade MM/AA",
+      "cvv": "CVV",
+      "name": "Titular",
+      "limit": "Limite",
+      "balance": "Saldo Devido",
+      "simulateSpend": "Gastar R$50",
+      "simulateReceive": "Receber R$1000",
+      "noCards": "Adicione seu primeiro cartão",
+      "cardAdded": "✅ Cartão salvo!",
+      "transactionAdded": "✅ Transação simulada!"
+    },
+    "profile": {
+      "title": "Perfil",
+      "monthlyBudget": "Orçamento R$/mês",
+      "currency": "Moeda Padrão",
+      "currencies": {
+        "BRL": "🇧🇷 BRL - Real",
+        "USD": "🇺🇸 USD - Dólar",
+        "EUR": "🇪🇺 EUR - Euro"
+      },
+      "save": "Salvar"
+    },
+    "expenses": {
+      "title": "Despesas",
+      "description": "O quê?",
+      "amount": "Valor",
+      "category": "Categoria",
+      "currency": "Moeda",
+      "add": "Nova Despesa"
+    },
+    "expenses.categories": {
+      "food": "🍔 Comida",
+      "transport": "🚗 Transporte",
+      "housing": "🏠 Casa",
+      "leisure": "🎉 Lazer",
+      "health": "🏥 Saúde",
+      "credit": "💳 Cartão",
+      "income": "💵 Receita",
+      "other": "📦 Outros"
+    },
+    "ai": {
+      "title": "🤖 MONO IA",
+      "send": "Enviar",
+      "noMessage": "Digite uma pergunta..."
+    }
+  },
+  "en": {
+    "common": {
+      "appName": "ECONOMONTEIRO MAX",
+      "save": "Save"
+    },
+    "navigation": {
+      "dashboard": "Dashboard",
+      "cards": "Cards"
+    },
+    "cards": {
+      "title": "Credit Cards",
+      "number": "Number",
+      "limit": "Limit"
+    }
+  }
+}
+
